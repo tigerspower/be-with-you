@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && isGrounded && canJump)
         {
-            jumpValue += 0.1f;
+            jumpValue += 30.0f * Time.deltaTime;
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded && canJump)

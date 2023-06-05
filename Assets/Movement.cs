@@ -69,6 +69,8 @@ public class Movement : MonoBehaviour
             canJump = true;
         }
     }
+
+    
     void ResetJump()
     {
         canJump = false;

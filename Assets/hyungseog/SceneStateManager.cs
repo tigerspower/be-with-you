@@ -26,7 +26,7 @@ public class SceneStateManager : MonoBehaviour
         btns_Start = rect_Start.GetComponentsInChildren<Button>();
 
         OnStartMenu();
-        print("OnGame ÇÔ¼ö¿¡ Ãß°¡ÇÒ °Í Àû¾îµÒ");
+        print("OnGame ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½");
     }
 
 

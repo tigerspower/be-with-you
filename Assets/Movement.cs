@@ -51,7 +51,7 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(0.0f, rb. velocity.y);
         }
 
-        if (jumpValue >= 20f && isGrounded)
+        if (jumpValue >= 25f && isGrounded)
         {
             float tempx = moveInput * walkSpeed;
             float tempy = jumpValue;

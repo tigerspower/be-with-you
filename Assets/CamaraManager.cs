@@ -19,8 +19,8 @@ public class CamaraManager : MonoBehaviour
     {
         if(target.gameObject != null)
         {
-            if(target.transform.position.y < 0){
-                targetPosY = 0;
+            if(target.transform.position.y < -3){
+                targetPosY = -3;
             }else
             {
                 targetPosY = target.transform.position.y;

@@ -531,7 +531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152945733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.87, y: -8.07, z: -3}
+  m_LocalPosition: {x: -5.59, y: -7.14, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 152945733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35ab36bdd0ff43f41b67ea17e107aec3, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c698b14539861c4fb2ce7a9fb8842fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 152945736}
@@ -603,7 +603,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   canJump: 1
-  jumpValue: 1
+  jumpValue: 0
   bounceMat: {fileID: 6200000, guid: 3076f940dcbc21349a04331bce679cce, type: 2}
   normalMat: {fileID: 6200000, guid: bf357326e0b8fea42b655f1122c75965, type: 2}
 --- !u!1 &173180484
@@ -785,7 +785,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282599297}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.43, y: -8.03, z: 0}
+  m_LocalPosition: {x: -9.39, y: -7.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1259,11 +1259,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21397a6dc3ad46a4d91726420779b894, type: 3}
+  m_Script: {fileID: 11500000, guid: a8e6e3bf7efeaf044a50d1d5b49bc48a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 152945733}
-  moveSpeed: 2
+  moveSpeed: 1
 --- !u!1 &596428129
 GameObject:
   m_ObjectHideFlags: 0
@@ -4753,7 +4753,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1995332970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae04a58ca81b5154391a42d35fb1623b, type: 3}
+  m_Script: {fileID: 11500000, guid: b028edbdaf9119144a5694ccd05e727f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 1995332972}
@@ -4793,7 +4793,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2046615963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a830c6e295804c40a6c8846aa941d0d, type: 3}
+  m_Script: {fileID: 11500000, guid: e5857ca83d31dbc469a0166929dff0f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   curSceneState: 0
@@ -4804,7 +4804,7 @@ MonoBehaviour:
   rect_Clear: {fileID: 5674287}
   playerPos:
   - {fileID: 596428130}
-  playerCS: {fileID: 152945738}
+  playerCS: {fileID: 0}
   starObjects:
   - {fileID: 1292765914}
   - {fileID: 884202549}

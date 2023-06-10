@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Spine.Unity;
 
 public class Movement : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Movement : MonoBehaviour
     public bool canJump = true;
     public float jumpValue = 0;
     public PhysicsMaterial2D bounceMat, normalMat;
+    public SkeletonAnimation skeletonAnimation;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,21 @@ public class Movement : MonoBehaviour
             0f,
             groundMask
         );
+
+        if(moveInput > 0){
+            
+            transform.localScale = new Vector3(-0.25f, 0.25f, 0.25f);
+        }else if(moveInput < 0){
+            transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+        }
+
+        if(moveInput != 0.0f && skeletonAnimation.AnimationName != "jump"){
+            skeletonAnimation.AnimationName = "walking";
+        }else if(isGrounded)
+        {
+            skeletonAnimation.ClearState();
+            skeletonAnimation.AnimationName = null;
+        }
 
         if(!isGrounded)
         {
@@ -56,6 +73,7 @@ public class Movement : MonoBehaviour
             float tempx = moveInput * walkSpeed;
             float tempy = jumpValue;
             rb.velocity = new Vector2(tempx, tempy);
+            skeletonAnimation.AnimationName = "jump";
             Invoke("ResetJump", 0.2f);
         }
         
@@ -64,10 +82,13 @@ public class Movement : MonoBehaviour
             if(isGrounded)
             {
                 rb.velocity = new Vector2(moveInput * walkSpeed, jumpValue);
-                jumpValue = 0.0f; 
+                jumpValue = 0.0f;
             }
             canJump = true;
+
         }
+
+
     }
 
     

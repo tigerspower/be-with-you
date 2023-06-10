@@ -1,0 +1,50 @@
+BWU_Muhani.png
+size:1086,431
+filter:Linear,Linear
+pma:true
+대가리
+bounds:2,2,427,619
+rotate:90
+몸통
+bounds:623,156,176,273
+offsets:0,0,188,273
+오른쪽 다리
+bounds:924,308,98,121
+오른쪽 손목
+bounds:1040,165,67,43
+rotate:90
+오른쪽 팔
+bounds:784,61,93,86
+rotate:90
+오른쪽 팔뚝
+bounds:959,9,79,79
+오른쪽 허벅지
+bounds:801,237,121,192
+오쪽 발목
+bounds:784,8,76,51
+왼쪽 다리
+bounds:801,161,74,120
+rotate:90
+왼쪽 발목
+bounds:872,13,70,51
+왼쪽 손목
+bounds:1040,96,67,44
+rotate:90
+왼쪽 팔
+bounds:872,66,93,85
+rotate:90
+왼쪽 팔뚝
+bounds:959,90,79,80
+왼쪽 허벅지
+bounds:623,32,122,159
+rotate:90
+표정_기본
+bounds:1024,316,113,60
+offsets:1,1,115,63
+rotate:90
+표정_웃음
+bounds:924,234,126,72
+offsets:1,1,128,74
+표정_중간
+bounds:923,172,108,60
+offsets:4,1,114,62

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CamaraManager : MonoBehaviour
 {
+    private SceneStateManager SSM;
+
     public GameObject target;
     public float moveSpeed;
     private Vector3 targetPos;
@@ -11,7 +13,7 @@ public class CamaraManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        SSM = SceneStateManager.instance;
     }
 
      
@@ -19,9 +21,12 @@ public class CamaraManager : MonoBehaviour
     {
         if(target.gameObject != null)
         {
-            if(target.transform.position.y < -3){
-                targetPosY = -3;
-            }else
+            print(SSM.stageIndex - 1 * 250);
+            if(target.transform.position.y < ((SSM.stageIndex - 1) * 250) - 3)
+            {
+                targetPosY = ((SSM.stageIndex - 1) * 250) - 3;
+            }
+            else
             {
                 targetPosY = target.transform.position.y;
             }

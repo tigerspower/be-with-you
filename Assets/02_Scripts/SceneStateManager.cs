@@ -11,7 +11,8 @@ public class SceneStateManager : MonoBehaviour
 
     [HideInInspector]
     public SceneState curSceneState = SceneState.Game;
-    private int stageIndex = 0;
+    [HideInInspector]
+    public int stageIndex = 0;
 
     [SerializeField]
     private RectTransform rect_Pause;
@@ -124,6 +125,7 @@ public class SceneStateManager : MonoBehaviour
 
     public void Restart()
     {
+        timeCount.time = timeCount.limitTime;
         OnGame(stageIndex);
     }
 

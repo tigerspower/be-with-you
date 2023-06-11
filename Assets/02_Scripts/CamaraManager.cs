@@ -14,7 +14,7 @@ public class CamaraManager : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+     
     void Update()
     {
         if(target.gameObject != null)
@@ -29,4 +29,4 @@ public class CamaraManager : MonoBehaviour
             this.transform.position = Vector3.Lerp(this.transform.position, targetPos, moveSpeed * Time.deltaTime);
         }
     }
-}
+}   
